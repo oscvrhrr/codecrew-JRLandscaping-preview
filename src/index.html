@@ -1,0 +1,438 @@
+---
+title: "Landscaping | JR Landscaping | Chicago"
+description: "Chicago landscaping, paver patios, planting, grading, and irrigation by Jr Landscaping."
+permalink: "/"
+tags: "sitemap" # content/content.json will make sure that all pages in content/ are marked with a "sitemap" tag, for automatic sitemap generation. As index.html is not in content/, we need to add it here to ensure the root page is included in the sitemap generation
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <!-- Critical styles are loaded first -->
+    <link rel="stylesheet" href="/assets/css/critical.css" />
+
+    <!-- If we're in production, defer the rest of the home page styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
+    {% if client.isProduction %}
+        <link rel="preload" href="/assets/css/local.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link rel="stylesheet" href="/assets/css/local.css">
+        </noscript>
+
+    {% else %}
+        <link rel="stylesheet" href="/assets/css/local.css" />
+    {% endif %}
+
+    <!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires some customising  -->
+    <!-- Uncomment the code below to enable Structured Data, and test it when you deploy to Netlify - https://developers.google.com/search/docs/appearance/structured-data -->
+    <!-- {% include "components/home-schema.html" %} -->
+
+{% endblock %}
+
+{% block body %}
+   <!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-446">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-tag">Chicago Landscaping</span>
+            <h1 class="cs-title">Outdoor Spaces That Make Home Feel Better</h1>
+            <p class="cs-text">
+                 JR Landscaping helps Chicago homeowners create clean, welcoming outdoor spaces with thoughtful landscaping and dependable service tailored to each property.
+            </p>
+        </div>
+        <!--Stats Section-->
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <span class="cs-number">20</span>
+                <span class="cs-desc">Years of experience</span>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">90%</span>
+                <span class="cs-desc">Customers based on referals</span>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">1989</span>
+                <span class="cs-desc">Established</span>
+            </li>
+        </ul>
+    </div>
+    <!-- Background Image -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/assets/images/hero.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images/hero.jpg">
+        <img loading="lazy" decoding="async" src="/assets/images/hero.jpg" alt="leaf" width="1920" height="1000" aria-hidden="true">
+    </picture>
+</section>
+                                              
+<!-- ============================================ -->
+<!--                   Services                   -->
+<!-- ============================================ -->
+
+<section id="services-469">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Services</span>
+            <h2 class="cs-title">Landscaping Services</h2>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia incidunt quia enim mollitia delectus? Perferendis sapiente quaerat quos. Odit quasi similique nobis earum laudantium ad doloribus quos eos quod. Delectus?
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMzNjUzMTQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jb21wb25lbnQgcHJldmlldy1pY29uIj48cGF0aCBkPSJNMTUuNTM2IDExLjI5M2ExIDEgMCAwIDAgMCAxLjQxNGwyLjM3NiAyLjM3N2ExIDEgMCAwIDAgMS40MTQgMGwyLjM3Ny0yLjM3N2ExIDEgMCAwIDAgMC0xLjQxNGwtMi4zNzctMi4zNzdhMSAxIDAgMCAwLTEuNDE0IDB6Ii8+PHBhdGggZD0iTTIuMjk3IDExLjI5M2ExIDEgMCAwIDAgMCAxLjQxNGwyLjM3NyAyLjM3N2ExIDEgMCAwIDAgMS40MTQgMGwyLjM3Ny0yLjM3N2ExIDEgMCAwIDAgMC0xLjQxNEw2LjA4OCA4LjkxNmExIDEgMCAwIDAtMS40MTQgMHoiLz48cGF0aCBkPSJNOC45MTYgMTcuOTEyYTEgMSAwIDAgMCAwIDEuNDE1bDIuMzc3IDIuMzc2YTEgMSAwIDAgMCAxLjQxNCAwbDIuMzc3LTIuMzc2YTEgMSAwIDAgMCAwLTEuNDE1bC0yLjM3Ny0yLjM3NmExIDEgMCAwIDAtMS40MTQgMHoiLz48cGF0aCBkPSJNOC45MTYgNC42NzRhMSAxIDAgMCAwIDAgMS40MTRsMi4zNzcgMi4zNzZhMSAxIDAgMCAwIDEuNDE0IDBsMi4zNzctMi4zNzZhMSAxIDAgMCAwIDAtMS40MTRsLTIuMzc3LTIuMzc3YTEgMSAwIDAgMC0xLjQxNCAweiIvPjwvc3ZnPg==" loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+                </picture>
+                <!-- Text Grouped For Flexbox-->
+                <div class="cs-item-group">
+                    <h3 class="cs-h3">Landscape Design</h3>
+                    <p class="cs-item-text">
+                          Create a cohesive outdoor space with a thoughtful landscape plan, greenscape design, and details tailored to your property.
+                    </p>
+                    <a href="#cs-contact-485" class="cs-link">Request a Quote</a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMzNjUzMTQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1wYXJrIHByZXZpZXctaWNvbiI+PHBhdGggZD0iTTEyIDE4aDEwIi8+PHBhdGggZD0iTTEzLjI0OCA5Ljk5OEE0LjUgNC41IDAgMCAwIDExLjc1IDguNlY4YTEgMSAwIDAgMC03LjUgMCA0LjkgNC45IDAgMCAwIDIuMjUgOUg4Ii8+PHBhdGggZD0ibTE1IDE0LTIgNiIvPjxwYXRoIGQ9Im0xOSAxNCAyIDYiLz48cGF0aCBkPSJNMjEgMTRoLTgiLz48cGF0aCBkPSJNOCAyMHYtNS45MjJhMiAyIDAgMCAwLS41ODYtMS40MTRMNi41IDExLjc1Ii8+PHBhdGggZD0iTTkuMjA1IDEyLjc5NSA4IDE0Ii8+PGNpcmNsZSBjeD0iMTkiIGN5PSI2IiByPSIyIi8+PC9zdmc+" loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+                </picture>
+                <!-- Text Grouped For Flexbox-->
+                <div class="cs-item-group">
+                    <h3 class="cs-h3">Landscaping building construction</h3>
+                    <p class="cs-item-text">
+                       Add durable, attractive hardscape features with paver patios and brick walkways that extend your outdoor living space.
+                    </p>
+                    <a href="#cs-contact-485" class="cs-link">Request a Quote</a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMzNjUzMTQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1wbGFudC1wb3QgcHJldmlldy1pY29uIj48cGF0aCBkPSJNMTQgOC41MzZWNmE0IDQgMCAwMTQtNGgxLjVhLjUuNSAwIDAxLjUuNVY0YTQgNCAwIDAxLTQgNCA0IDQgMCAwMC00IDQgNSA1IDAgMDEtOC00IDUgNSAwIDAxOCA0YzAgMiAxIDMgMSA1Ii8+PHBhdGggZD0ibTE4IDE3LTEuMDg1IDMuNThBMiAyIDAgMDExNSAyMkg5LjAwMmEyIDIgMCAwMS0xLjkxMy0xLjQxOEw2IDE3Ii8+PHBhdGggZD0iTTUgMTdoMTQiLz48L3N2Zz4=" loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+                </picture>
+                <!-- Text Grouped For Flexbox-->
+                <div class="cs-item-group">
+                    <h3 class="cs-h3">Shrub planting</h3>
+                    <p class="cs-item-text">
+                        Refresh your yard with tree and shrub planting, sod installation, and planting plans that bring color and structure to your landscape.
+                    </p>
+                    <a href="#cs-contact-485" class="cs-link">Request a Quote</a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMzNjUzMTQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1mYXVjZXQgcHJldmlldy1pY29uIj48cGF0aCBkPSJNMTAuMDgzIDUuNDI4IDUuNTcgNC4wODNhMiAyIDAgMTAuMDAxIDMuODM0bDQuNTEyLTEuMzQ1Ii8+PHBhdGggZD0iTTEyIDh2MyIvPjxwYXRoIGQ9Im0xMy45MTcgNS40MjggNC41MTEtMS4zNDVhMiAyIDAgMTEwIDMuODM0bC00LjUxLTEuMzQ1Ii8+PHBhdGggZD0iTTE4IDE3di00LjAwNiIvPjxwYXRoIGQ9Ik0yMiAxMXY4Ii8+PHBhdGggZD0iTTIyIDEyaC0zYTEgMSAwIDAwLTEgLjk5NGgtMi41MzlhNCA0IDAgMDAtNi45MTUtLjAxMkw3IDEzYTUgNSAwIDAwLTUgNXYxYTEgMSAwIDAwMSAxaDJhMSAxIDAgMDAxLTF2LTFhMSAxIDAgMDEuOTk1LTFsMS41NTIuMDE4YTQgNCAwIDAwNi45MDcgMEwxOCAxN2ExIDEgMCAwMDEgMWgzIi8+PGNpcmNsZSBjeD0iMTIiIGN5PSI2IiByPSIyIi8+PC9zdmc+" loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+                </picture>
+                <!-- Text Grouped For Flexbox-->
+                <div class="cs-item-group">
+                    <h3 class="cs-h3">Irrigation construction</h3>
+                    <p class="cs-item-text">
+                        Build a healthier foundation for your landscape with earthmoving, regrading, and irrigation construction designed around your property.
+                    </p>
+                    </p>
+                    <a href="#cs-contact-485" class="cs-link">Request a Quote</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+ 
+<!-- ============================================ -->
+<!--              Side By Side Reverse            -->
+<!-- ============================================ -->
+
+<section id="sbsr-2296">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Approach</span>
+            <h2 class="cs-title">Thoughtful Landscaping, Built Around Your Home</h2>
+            <p class="cs-text">
+                 JR Landscaping brings landscape design, paver patios, planting, grading, and irrigation together to create outdoor spaces that feel finished, functional, and personal to your property.
+            <h3 class="cs-h3">Our Process</h3>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <strong>Site Consultation:</strong> Start with your goals, property needs, and ideas for the space.
+                </li>
+                <li class="cs-li">
+                    <strong>Landscape Planning:</strong> Shape a cohesive plan for hardscapes, planting, green space, and drainage needs.
+    </li>
+                </li>
+                <li class="cs-li">
+                    <strong>Professional Installation:</strong> Bring the design to life with pavers, plantings, grading, irrigation, and construction work.
+                </li>
+                <li class="cs-li">
+                    <strong>Finished for Enjoyment:</strong> Complete the details so your updated outdoor space is ready to use and enjoy.
+    </li>
+                </li>
+            </ul>
+            <a href="#cs-contact-485" class="cs-button-solid">Book An Appointment</a>
+        </div>
+        <div class="cs-image-group">
+            <!--Main Image-->
+            <div class="cs-picture-wrapper1">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="assets/images/jr-projects/jr-after.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="assets/images/jr-projects/jr-after.jpg">
+                    <img loading="lazy" decoding="async" src="assets/images/jr-projects/jr-after.jpg" alt="wedding" width="272" height="337">
+                </picture>
+                <span class="cs-tag">After</span>
+            </div>
+            <!--Small Image-->
+            <div class="cs-picture-wrapper2">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="assets/images/jr-projects/jr-after-2.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="assets/images/jr-projects/jr-after-2.jpg">
+                    <img loading="lazy" decoding="async" src="assets/images/jr-projects/jr-after-2.jpg" alt="wedding" width="243" height="367">
+                </picture>
+                <span class="cs-tag">After</span>
+            </div>
+            <!--Small Image-->
+            <div class="cs-picture-wrapper3">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="assets/images/jr-projects/jr-before.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="assets/images/jr-projects/jr-before.jpg">
+                    <img loading="lazy" decoding="async" src="assets/images/jr-projects/jr-before.jpg" alt="wedding" width="243" height="367">
+                </picture>
+                <span class="cs-tag">Before</span>
+            </div>
+            <img class="cs-arrow cs-arrow-left" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/construction-arrow-left.svg" alt="arrow" width="148" height="54">
+            <img class="cs-arrow cs-arrow-right" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/construction-arrow-right.svg" alt="arrow" width="148" height="54">
+        </div>
+    </div>
+
+</section>
+<!-- ============================================ -->
+<!--                  Gallery                     -->
+<!-- ============================================ -->
+
+<div id="gallery-570">
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="assets/images/jr-projects/jr-2.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="assets/images/jr-projects/jr-2.jpg">
+        <img loading="lazy" decoding="async" src="assets/images/jr-projects/jr-2.jpg" alt="picture" width="480" height="549">
+    </picture>
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="assets/images/jr-projects/jr-10.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="assets/images/jr-projects/jr-10.jpg">
+        <img loading="lazy" decoding="async" src="assets/images/jr-projects/jr-10.jpg" alt="picture" width="480" height="549">
+    </picture>
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="assets/images/jr-projects/j-6.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="assets/images/jr-projects/j-6.jpg">
+        <img loading="lazy" decoding="async" src="assets/images/jr-projects/j-6.jpg" alt="picture" width="480" height="549">
+    </picture>
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="assets/images/pavers/jr-11.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="assets/images/pavers/jr-11.jpg">
+        <img loading="lazy" decoding="async" src="assets/images/pavers/jr-11.jpg" alt="picture" width="480" height="549">
+    </picture>
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="assets/images/pavers/jr-12.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="assets/images/pavers/jr-12.jpg">
+        <img loading="lazy" decoding="async" src="assets/images/pavers/jr-12.jpg" alt="picture" width="480" height="549">
+    </picture>
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="assets/images/jr-projects/jr-7.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="assets/images/jr-projects/jr-7.jpg">
+        <img loading="lazy" decoding="async" src="assets/images/jr-projects/jr-7.jpg" alt="picture" width="480" height="549">
+    </picture>
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="assets/images/jr-projects/jr-8.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="assets/images/jr-projects/jr-8.jpg">
+        <img loading="lazy" decoding="async" src="assets/images/jr-projects/jr-8.jpg" alt="picture" width="480" height="549">
+    </picture>
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="assets/images/jr-projects/jr-16.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="assets/images/jr-projects/jr-16.jpg">
+        <img loading="lazy" decoding="async" src="assets/images/jr-projects/jr-16.jpg" alt="picture" width="480" height="549">
+    </picture>
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="assets/images/pavers/jr-14.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="assets/images/pavers/jr-14.jpg">
+        <img loading="lazy" decoding="async" src="assets/images/pavers/jr-14.jpg" alt="picture" width="480" height="549">
+    </picture>
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="assets/images/pavers/jr-15.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="assets/images/pavers/jr-15.jpg">
+        <img loading="lazy" decoding="async" src="assets/images/pavers/jr-15.jpg" alt="picture" width="480" height="549">
+    </picture>
+</div>
+                                           
+                                
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-2290">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">testimonial</span>
+            <h2 class="cs-title">What Our Clients Say</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <!--Yellow Quote-->
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/yellow-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+                <h3 class="cs-header">
+                    Raul fixed up my backyard like no other
+                </h3>
+                <p class="cs-item-text">
+                    I have dogs so my backyard was suffering and lacked greenery. He suggested turf and a fire pit and the results are night and day. I have two toddlers so being able to utilize our backyard after many years of neglect feels like we have a new home entirely. The crew were extremely polite and diligent-- highly recommend!!
+                </p>
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <!-- <img class="cs-profile" src="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/construction-review1.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true"> -->
+                    </picture>
+                    <span class="cs-name">
+                        	
+                        Jocelyn C.
+                        <span class="cs-job">Yelp Review</span>
+                    </span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <!--Yellow Quote-->
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/yellow-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+                <h3 class="cs-header">
+                    Had a small landscaping job and Raul was amazing in helping me design it and choose the right flowers/plants and trees! 
+                </h3>
+                <p class="cs-item-text">
+                    They sent in a team and completed the job in a few hours and cleaned up very nice as well!
+                    The price was very reasonable as well compared to market and I highly recommend booking your project with them.
+                </p>
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <!-- <img class="cs-profile" src="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/construction-review2.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true"> -->
+                    </picture>
+                    <span class="cs-name">
+                        	
+                        Mohammed H.
+                        <span class="cs-job">Yelp review</span>
+                    </span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <!--Yellow Quote-->
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/yellow-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+                <h3 class="cs-header">
+                    These guys are not your regular neighborhood Lawncare service.
+                </h3>
+                <p class="cs-item-text">
+                    They are serious professionals with lots of manpower and equipment, the kind of service that can do an office park.
+                I called them to do a fall cleanup of leaves in my standard 125x25 Chicago lot. 7 guys and 2 dump trucks showed up and 15 minutes later there wasn't a single leaf in my yard.
+                </p>
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <!-- <img class="cs-profile" src="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/construction-review3.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true"> -->
+                    </picture>
+                    <span class="cs-name">
+                        John F
+                        <span class="cs-job">Yelp review</span>
+                    </span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <!--Yellow Quote-->
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/yellow-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+                <h3 class="cs-header">
+                    The team does great work--our lawn has never looked better!
+                </h3>
+                <p class="cs-item-text">
+                    Professional, dependable, and high quality 3-season lawn care. I also appreciate Raul's responsiveness with any questions or quotes. Highly recommend.
+                </p>
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <!-- <img class="cs-profile" src="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/construction-review4.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true"> -->
+                    </picture>
+                    <span class="cs-name">
+                        Lindsey H.
+                        <span class="cs-job">Yelp review</span>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+<!-- ============================================ -->
+<!--                    Form                      -->
+<!-- ============================================ -->
+
+<section id="cs-contact-485">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Talk to us about your <span class="cs-color">garden plan!</span></h2>
+            <p class="cs-text">
+                We would love to hear about your project and discuss how we can help. Please fill the form on the right side to schedule a call or discussion and meeting on the your convenient time.
+            </p>
+            <span class="cs-heading">Any problem about your booking?</span>
+            <span class="cs-heading">You can contact us on :</span>
+            <a href="tel:219-555-4545" class="cs-link">(000) 000-0000</a>
+            <a href="mailto:info@codestitch.com" class="cs-link">hello@jrlandscapingservice.com</a>
+        </div>
+        <!--Form-->
+        <form id="cs-form-485" name="Contact Form" method="post">
+            <h3 class="cs-h3">Schedule Consult</h3>
+            <label class="cs-label">
+                Name
+                <input class="cs-input" required type="text" id="name-485" name="name" placeholder="Name">
+            </label>
+            <label class="cs-label">
+                Phone
+                <input class="cs-input" required type="text" id="phone-485" name="phone" placeholder="Phone">
+            </label>
+            <label class="cs-label">
+                Email
+                <input class="cs-input" required type="text" id="email-485" name="email" placeholder="Email">
+            </label>
+            <label class="cs-label">
+                How Did You Find Us
+                <input class="cs-input" type="text" id="find-485" name="find-us" placeholder="How did you find us?">
+            </label>
+            <label class="cs-label cs-label-message">
+                What do you need help with?
+                <select name="cars" id="cs-select-485">
+                    <option value="full renovation">Full Renovation</option>
+                    <option value="sod install">Sod Install</option>
+                    <option value="yard cleanup">Yard Cleanup</option>
+                    <option value="landscape design">Landscape Design</option>
+                </select>
+            </label>
+            <button class="cs-button-solid cs-submit" type="submit">Book a Consult</button>
+        </form>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/house.jpg">
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/house.jpg">
+        <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/house.jpg" alt="house" width="1920" height="1200">
+    </picture>
+</section>
+                                
+{% endblock %}
